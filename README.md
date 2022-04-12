@@ -16,7 +16,12 @@ Cordova Install Note:
 
 플러그인 추가
 
-cordova plugin add cordova-plugin-jminjun-kakaotalk --variable KAKAO_APP_KEY=YOUR_KAKAO_APP_KEY
+### Installation:
+
+Cordova :
+````
+cordova plugin add https://github.com/jmj8257/cordova-plugin-kakaotalk.git  --variable KAKAO_APP_KEY=YOUR_KAKAO_APP_KEY --save
+````
 
 [Android]
 * 카카오 개발자 센터에서 키 해시를 등록해야 합니다 
