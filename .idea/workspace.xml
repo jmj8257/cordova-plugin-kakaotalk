@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfb5a45b-850b-485b-9505-1e82d1bf0810" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.npmrc" beforeDir="false" afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/android/KakaoTalk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/android/KakaoTalk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/KakaoTalk.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/KakaoTalk.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +57,9 @@
       <workItem from="1649740025498" duration="3333000" />
       <workItem from="1649749167426" duration="4637000" />
       <workItem from="1649764554312" duration="9000" />
+      <workItem from="1649764577671" duration="89000" />
+      <workItem from="1649764733476" duration="649000" />
+      <workItem from="1649766194811" duration="633000" />
     </task>
     <servers />
   </component>

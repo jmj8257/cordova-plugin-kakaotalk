@@ -11,7 +11,7 @@ import com.kakao.sdk.template.model.FeedTemplate;
 import com.kakao.sdk.template.model.Link;
 import com.kakao.sdk.template.model.ListTemplate;
 import com.kakao.sdk.user.UserApiClient;
-import com.kakao.util.helper.Utility;
+import com.kakao.sdk.common.util.Utility;
 import com.tqsoft.tqmobilemystore.R;
 import com.utils.Generics;
 
@@ -281,7 +281,7 @@ public class KakaoTalk extends CordovaPlugin {
 	 * 액세스 토큰을 가져온다
 	 */
 	private void getAccessToken(CallbackContext callbackContext) {
-		String keyHash = Utility.getKeyHash(getCurrentActivity());
+		String keyHash = Utility.INSTANCE.getKeyHash(cordova.getContext());
 		System.out.println("keyHash : " + keyHash);
 
 		// 토큰 정보 보기
