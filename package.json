@@ -1,0 +1,39 @@
+{
+  "name": "@jmj8257/cordova-plugin-kakaotalk",
+  "version": "1.0.1",
+  "description": "Cordova KakaoTalk Plugin",
+  "cordova": {
+    "id": "cordova-plugin-kakaotalk",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmj8257/cordova-plugin-kakaotalk.git"
+  },
+  "keywords": [
+    "cordova",
+    "kakao",
+    "kakaotalk",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "J.Minjun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmj8257/cordova-plugin-kakaotalk/issues"
+  },
+  "homepage": "https://github.com/jmj8257/cordova-plugin-kakaotalk#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

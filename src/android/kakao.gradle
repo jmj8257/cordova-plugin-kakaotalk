@@ -1,0 +1,15 @@
+repositories {
+	mavenCentral()
+	maven { url 'https://devrepo.kakao.com/nexus/content/groups/public/' }
+}
+dependencies {
+	// 카카오 로그인
+	implementation ("com.kakao.sdk:v2-user:2.9.0") {
+		transitive = true
+	}
+
+	// 메시지(카카오링크)
+	implementation ("com.kakao.sdk:v2-link:2.9.0") {
+		transitive = true
+	}
+}
