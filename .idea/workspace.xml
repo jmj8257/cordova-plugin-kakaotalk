@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfb5a45b-850b-485b-9505-1e82d1bf0810" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.npmrc" beforeDir="false" afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ios/KakaoTalk.m" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoTalk.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
       <workItem from="1649826671767" duration="475000" />
       <workItem from="1649831562120" duration="7000" />
       <workItem from="1649831580919" duration="7263000" />
-      <workItem from="1649841893587" duration="992000" />
+      <workItem from="1649841893587" duration="1340000" />
     </task>
     <servers />
   </component>
