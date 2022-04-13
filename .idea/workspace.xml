@@ -2,8 +2,132 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfb5a45b-850b-485b-9505-1e82d1bf0810" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCommon.framework/Headers/KCMAgent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCommon.framework/Headers/KCMConfiguration.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCommon.framework/Headers/KCMError.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCommon.framework/Headers/KCMException.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCommon.framework/Headers/KCMUtils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCommon.framework/Headers/KakaoCommon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCommon.framework/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCommon.framework/KakaoCommon" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCommon.framework/Modules/module.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCordovaSDK.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCordovaSDK.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCordovaStoryLinkHelper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoCordovaStoryLinkHelper.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoLink.framework/Headers/KLKError.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoLink.framework/Headers/KLKImageStorage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoLink.framework/Headers/KLKTalkLinkCenter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoLink.framework/Headers/KLKTalkLinkCore.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoLink.framework/Headers/KakaoLink.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoLink.framework/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoLink.framework/KakaoLink" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoLink.framework/Modules/module.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KMTButtonObject.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KMTCommerceObject.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KMTCommerceTemplate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KMTContentObject.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KMTFeedTemplate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KMTLinkObject.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KMTListTemplate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KMTLocationTemplate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KMTSocialObject.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KMTTemplate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KMTTextTemplate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KakaoMessageTemplate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/KakaoMessageTemplate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Modules/module.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOAppFriend.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOChatContext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOChatMember.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOHTTPMethod.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOImages.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOLoginButton.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOSession.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOSessionTask+AppFriendAPI.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOSessionTask+TalkAPI.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOSessionTask+UserManagementAPI.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOSessionTask.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOStoryCommentInfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOStoryLikeInfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOStoryPostInfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOTalkMessageSending.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOToken.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOUser.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOUserMe.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KakaoOpenSDK.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KakaoPushMessagePropertyForApns.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KakaoPushMessagePropertyForGcm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Modules/module.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoPlusFriend.framework/Headers/KPFPlusFriend.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoPlusFriend.framework/Headers/KakaoPlusFriend.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoPlusFriend.framework/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoPlusFriend.framework/KakaoPlusFriend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoPlusFriend.framework/Modules/module.modulemap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoS2.framework/Headers/KS2Event.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoS2.framework/Headers/KS2Session.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoS2.framework/Headers/KakaoS2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoS2.framework/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoS2.framework/KakaoS2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ios/KakaoS2.framework/Modules/module.modulemap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.npmrc" beforeDir="false" afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/KakaoOpenSDK" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/KakaoOpenSDK" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOAccessTokenInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOAccessTokenInfo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOAgeAuthQueryStringBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOAgeAuthQueryStringBuilder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOAppCall.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOBaseContext.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOBaseContext.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOChat.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOChat.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOChatContext.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOError.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOError.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOFriend.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOFriend.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOFriendContext.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOFriendContext.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOFriendOperation.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOFriendOperation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOHTTPMethod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOImages.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOLoginButton.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOPushTokenInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOPushTokenInfo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOSession.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOSessionTask+AgeAuthAPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOSessionTask+AgeAuthAPI.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOSessionTask+FriendAPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOSessionTask+FriendAPI.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOSessionTask+PushAPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOSessionTask+PushAPI.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOSessionTask+StorageAPI.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOSessionTask+StoryAPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOSessionTask+StoryAPI.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOSessionTask+TalkAPI.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOSessionTask+TokenAPI.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOSessionTask+TokenAPI.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOSessionTask+UserManagementAPI.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOSessionTask.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOStorageImageInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOStoryActorInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOStoryActorInfo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOStoryCommentInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOStoryLikeInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOStoryLinkInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOStoryLinkInfo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOStoryMyStoryImageInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOStoryMyStoryImageInfo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOStoryMyStoryInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOStoryMyStoryInfo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOStoryPostInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOStoryProfile.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOStoryProfile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOTalkMessageSending.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOTalkProfile.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOTalkProfile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOUser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOUserInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOUserInfo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KOUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KOUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KakaoOpenSDK.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KakaoPushMessageObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Headers/KakaoPushMessageObject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KakaoPushMessagePropertyForApns.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KakaoPushMessagePropertyForGcm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KakaoTalkLinkAction.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/KakaoTalkLinkObject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Headers/NSDictionary+SafeValue.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoMessageTemplate.framework/Headers/KMTParamObject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/A/Resources/KakaoOpenSDK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoOpenSDK.framework/Versions/Current" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoTalk.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ios/KakaoTalk.m" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +150,9 @@
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/jangminjun/Projects/4.MJ_Project/99.Cordova-plugin-custom/cordova-plugin-kakaotalk/src",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.23908046",
     "vue.rearranger.settings.migration": "true"
@@ -33,6 +160,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -56,6 +184,8 @@
       <workItem from="1649819001720" duration="618000" />
       <workItem from="1649826607417" duration="39000" />
       <workItem from="1649826671767" duration="475000" />
+      <workItem from="1649831562120" duration="7000" />
+      <workItem from="1649831580919" duration="5411000" />
     </task>
     <servers />
   </component>

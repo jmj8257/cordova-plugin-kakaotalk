@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
    id="cordova-plugin-kakaotalk"
    name="cordova-plugin-kakaotalk"
-   version="1.0.6">
+   version="1.0.7">
 
     <name>KakaoTalk</name>
     <description>KakaoTalk Cordova Plugin</description>
@@ -74,21 +74,32 @@
                 </dict>
             </array>
         </config-file>
+
         <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
           <array>
             <string>kakao$KAKAO_APP_KEY</string>
-            <string>kakaokompassauth</string>
-            <string>storykompassauth</string>
-            <string>kakaolink</string>
-            <string>kakaotalk-4.5.0</string>
-            <string>kakaostory-2.9.0</string>
+              <string>kakaokompassauth</string>
+              <string>storykompassauth</string>
+              <string>kakaolink</string>
+              <string>storylink</string>
+              <string>kakaotalk-5.9.7</string>
+              <string>kakaostory-2.9.0</string>
           </array>
         </config-file>
 
         <framework src="QuartzCore.framework" />
+        <framework src="src/ios/KakaoCommon.framework" custom="true" />
+        <framework src="src/ios/KakaoLink.framework" custom="true" />
+        <framework src="src/ios/KakaoMessageTemplate.framework" custom="true" />
         <framework src="src/ios/KakaoOpenSDK.framework" custom="true" />
+        <framework src="src/ios/KakaoPlusFriend.framework" custom="true" />
+        <framework src="src/ios/KakaoS2.framework" custom="true" />
 
-        <source-file src="src/ios/KakaoTalk.m" />
-        <header-file src="src/ios/KakaoTalk.h" />
+        <source-file src="src/ios/KakaoCordovaSDK.m" />
+        <header-file src="src/ios/KakaoCordovaSDK.h" />
+        <source-file src="src/ios/KakaoCordovaStoryLinkHelper.m" />
+        <header-file src="src/ios/KakaoCordovaStoryLinkHelper.h" />
+
+
     </platform>
 </plugin>
