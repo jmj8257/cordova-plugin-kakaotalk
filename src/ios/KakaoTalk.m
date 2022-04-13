@@ -2,7 +2,7 @@
 #import <Cordova/CDVPlugin.h>
 #import <objc/runtime.h>
 
-@interface KakaoCordovaSDK ()
+@interface KakaoTalk ()
 @property (copy)   NSString* callbackId;
 @end
 
@@ -835,18 +835,16 @@
             [self errorHandler:command.callbackId error:NULL errorCode:0 errorMessage:@"url is null."];
             return;
         }
-        NSURL *imageURL = [NSURL URLWithString:options[@"url"]];
-        [[KLKImageStorage sharedStorage] deleteWithImageURL:imageURL success:^{
-            // 삭제 성공
-            CDVPluginResult* pluginResult = pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@""];
-            [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-        } failure:^(NSError * _Nonnull error) {
-            // 삭제 실패
-            [self errorHandler:command.callbackId error:error errorCode:0 errorMessage:nil];
-
-        }];
-
-
+//         NSURL *imageURL = [NSURL URLWithString:options[@"url"]];
+//         [[KLKImageStorage sharedStorage] deleteWithImageURL:imageURL success:^{
+//             // 삭제 성공
+//             CDVPluginResult* pluginResult = pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@""];
+//             [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+//         } failure:^(NSError * _Nonnull error) {
+//             // 삭제 실패
+//             [self errorHandler:command.callbackId error:error errorCode:0 errorMessage:nil];
+//
+//         }];
     }
 
 - (void)uploadLocalImage
