@@ -8,7 +8,7 @@
 #import "KakaoCordovaStoryLinkHelper.h"
 #import "AppDelegate.h"
 
-@interface KakaoCordovaSDK : CDVPlugin <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate>
+@interface KakaoTalk : CDVPlugin <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate>
 
 typedef NS_ENUM(NSInteger, MyAuthType) {
     MyAuthTypeTalk = 1,
