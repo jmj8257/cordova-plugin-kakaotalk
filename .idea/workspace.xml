@@ -6,8 +6,6 @@
       <change beforePath="$PROJECT_DIR$/.npmrc" beforeDir="false" afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ios/KakaoCordovaSDK.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoTalk.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ios/KakaoCordovaSDK.m" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoTalk.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,7 @@
       <workItem from="1649826671767" duration="475000" />
       <workItem from="1649831562120" duration="7000" />
       <workItem from="1649831580919" duration="7263000" />
-      <workItem from="1649841893587" duration="431000" />
+      <workItem from="1649841893587" duration="673000" />
     </task>
     <servers />
   </component>
