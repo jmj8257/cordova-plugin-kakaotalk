@@ -1,6 +1,6 @@
 {
   "name": "@jmj8257/cordova-plugin-kakaotalk",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Cordova KakaoTalk Plugin",
   "cordova": {
     "id": "cordova-plugin-kakaotalk",
