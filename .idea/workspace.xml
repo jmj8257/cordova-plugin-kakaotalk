@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cfb5a45b-850b-485b-9505-1e82d1bf0810" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cordova-plugin-kakaotalk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cordova-plugin-kakaotalk.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,18 +22,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jangminjun/Projects/4.MJ_Project/99.Cordova-plugin-custom/cordova-plugin-kakaotalk/src&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.23908046&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/jangminjun/Projects/4.MJ_Project/99.Cordova-plugin-custom/cordova-plugin-kakaotalk/src",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.23908046",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -62,6 +62,7 @@
       <workItem from="1649831562120" duration="7000" />
       <workItem from="1649831580919" duration="7263000" />
       <workItem from="1649841893587" duration="1955000" />
+      <workItem from="1651149037982" duration="343000" />
     </task>
     <servers />
   </component>
