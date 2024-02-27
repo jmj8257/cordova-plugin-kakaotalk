@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfb5a45b-850b-485b-9505-1e82d1bf0810" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/android/KakaoTalk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/android/KakaoTalk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ios/KakaoTalk.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoTalk.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ios/KakaoTalk.m" beforeDir="false" afterPath="$PROJECT_DIR$/src/ios/KakaoTalk.m" afterDir="false" />
-    </list>
+    <list default="true" id="cfb5a45b-850b-485b-9505-1e82d1bf0810" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +72,7 @@
       <workItem from="1649831580919" duration="7263000" />
       <workItem from="1649841893587" duration="1955000" />
       <workItem from="1651149037982" duration="343000" />
-      <workItem from="1709010700912" duration="1776000" />
+      <workItem from="1709010700912" duration="2120000" />
     </task>
     <servers />
   </component>
