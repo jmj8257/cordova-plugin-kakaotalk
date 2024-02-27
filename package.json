@@ -21,12 +21,9 @@
     "cordova-android",
     "cordova-ios"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.0.0"
-    }
-  ],
+  "engines": {
+    "cordova": ">=3.0.0"
+  },
   "author": "J.Minjun",
   "license": "MIT",
   "bugs": {
