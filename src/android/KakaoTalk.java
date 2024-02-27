@@ -1,18 +1,27 @@
 package com.jmj.plugin.kakao;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.util.Log;
 
 import com.kakao.sdk.common.KakaoSdk;
-import com.kakao.sdk.link.LinkClient;
+import com.kakao.sdk.common.util.KakaoCustomTabsClient;
+import com.kakao.sdk.share.ShareClient;
+import com.kakao.sdk.share.WebSharerClient;
+import com.kakao.sdk.template.model.Button;
 import com.kakao.sdk.template.model.Content;
+import com.kakao.sdk.template.model.DefaultTemplate;
 import com.kakao.sdk.template.model.FeedTemplate;
+import com.kakao.sdk.template.model.ItemContent;
 import com.kakao.sdk.template.model.Link;
 import com.kakao.sdk.template.model.ListTemplate;
+import com.kakao.sdk.template.model.Social;
 import com.kakao.sdk.user.UserApiClient;
 import com.kakao.sdk.common.util.Utility;
-import com.tqsoft.tqmobilemystore.R;
+import com.celler.cellerclientapp.R;
 import com.utils.Generics;
 
 import org.apache.cordova.CallbackContext;
@@ -23,7 +32,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import kotlin.Unit;
 
 public class KakaoTalk extends CordovaPlugin {
 
@@ -68,7 +83,7 @@ public class KakaoTalk extends CordovaPlugin {
 		}
 		else if (action.equals("share")) {
 			try {
-				this.share(options, callbackContext);
+				this.share(options, callbackContext, cordova.getContext());
 				return true;
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -78,7 +93,7 @@ public class KakaoTalk extends CordovaPlugin {
 		return false;
 	}
 
-	private void share(JSONArray options, final CallbackContext callbackContext) {
+	private void share(JSONArray options, final CallbackContext callbackContext, Context context) {
 		try {
 			final JSONObject parameters = options.getJSONObject(0);
 			String webLinkText = "";
@@ -89,11 +104,9 @@ public class KakaoTalk extends CordovaPlugin {
 			String paramsDesc= "";
 			String paramsImageUrl = "";
 			String paramsLink = "";
+			String userToken = "";
 
-			if (parameters.has("text")) {
-				// TODO:
-			}
-
+			//content 데이터 확인
 			if (parameters.has("params")) {
 				JSONObject paramsObj = parameters.getJSONObject("params");
 				if(paramsObj.has("title") && paramsObj.has("desc") && paramsObj.has("imageUrl") && paramsObj.has("link")) {
@@ -101,17 +114,23 @@ public class KakaoTalk extends CordovaPlugin {
 					paramsDesc = paramsObj.getString("desc");
 					paramsImageUrl = paramsObj.getString("imageUrl");
 					paramsLink = paramsObj.getString("link");
+					if(paramsObj.getString("recommendUserToken") != null)
+						userToken = paramsObj.getString("recommendUserToken");
 				}
 			}
 
+			//web url 확인
 			if (parameters.has("weblink")) {
 				JSONObject weblinkObj = parameters.getJSONObject("weblink");
 				if(weblinkObj.has("text") && weblinkObj.has("url")) {
 					webLinkText = weblinkObj.getString("text");
 					webLinkUrl = weblinkObj.getString("url");
+					if(!userToken.equals(""))
+						webLinkUrl += "?recommendUserToken=" + userToken;
 				}
 			}
 
+			//app url 확인
 			if (parameters.has("applink")) {
 				JSONObject applinkObj = parameters.getJSONObject("applink");
 				if(applinkObj.has("text") && applinkObj.has("url")) {
@@ -120,52 +139,85 @@ public class KakaoTalk extends CordovaPlugin {
 				}
 			}
 
-			List<Content> contents = Generics.newArrayList();
-			contents.add(new Content(
-					paramsTitle,
-					paramsImageUrl,
-					new Link(webLinkUrl,appLinkUrl),
-					paramsDesc));
-			contents.add(new Content(
-					paramsTitle,
-					paramsImageUrl,
-					new Link(webLinkUrl,appLinkUrl),
-					paramsDesc));
-			contents.add(new Content(
-					paramsTitle,
-					paramsImageUrl,
-					new Link(webLinkUrl,appLinkUrl),
-					paramsDesc));
+			//item content 데이터 확인
+			if (parameters.has("itemContent")) {
+				JSONObject itemObj = parameters.getJSONObject("itemContent");
+			}
 
-			List<com.kakao.sdk.template.model.Button> listButtons = Generics.newArrayList();
-			listButtons.add(new com.kakao.sdk.template.model.Button(webLinkText, new Link(webLinkUrl,appLinkUrl)));
-			listButtons.add(new com.kakao.sdk.template.model.Button(appLinkText, new Link(webLinkUrl,appLinkUrl)));
-			ListTemplate listTemplate = new ListTemplate(
-					paramsTitle,
-					new Link(webLinkUrl,appLinkUrl),
-					contents,
-					listButtons);
+			List<Button> buttons = Generics.newArrayList();
 
-			List<com.kakao.sdk.template.model.Button> buttons = Generics.newArrayList();
-			buttons.add(new com.kakao.sdk.template.model.Button(webLinkText, new Link(webLinkUrl,appLinkUrl)));
-			buttons.add(new com.kakao.sdk.template.model.Button(appLinkText, new Link(webLinkUrl,appLinkUrl)));
+			//안드로이드 카카오톡 앱 버튼 url
+			Map<String, String> androidExecutionParams = new HashMap<>();
+			androidExecutionParams.put("android_execution_params", appLinkUrl);
+
+			//ios 카카오톡 앱 버튼 url
+			Map<String, String> iosExecutionParams = new HashMap<>();
+
+			//content url link 객체
+			Link contentLink = new Link(paramsLink, paramsLink , null, null);
+			//web url link 객체
+			Link webLink = new Link(webLinkUrl, webLinkUrl, null, null);
+			//app url link 객체
+			Link appLink = new Link(null, null, androidExecutionParams, iosExecutionParams);
+
+			buttons.add(new Button(webLinkText, webLink));
+			buttons.add(new Button(appLinkText, appLink));
+			//feed type template 생성
 			FeedTemplate feedTemplate = new FeedTemplate(
 					new Content(
 							paramsTitle,
 							paramsImageUrl,
-							new Link(webLinkUrl,appLinkUrl),
+							contentLink,
 							paramsDesc),
-					null/*new Social(286,45,845)*/);
+					null,
+					null,
+					buttons);
 
-			LinkClient.getInstance().defaultTemplate(this.cordova.getActivity(), feedTemplate, (linkResult, error) -> {
-				if (error != null) {
-					System.out.println(error);
+			// 카카오톡 설치여부 확인
+			if (ShareClient.getInstance().isKakaoTalkSharingAvailable(context)) {
+				// 카카오톡으로 카카오톡 공유 가능
+				ShareClient.getInstance().shareDefault(context, feedTemplate, null, (sharingResult, error) -> {
+					if (error != null) {
+						Log.e(LOG_TAG, "카카오톡 공유 실패", error);
+						callbackContext.error(error.getMessage());
+					}
+					else if (sharingResult != null) {
+						Log.d(LOG_TAG, "카카오톡 공유 성공 : " + sharingResult.getIntent());
+						cordova.getContext().startActivity(sharingResult.getIntent());
+
+						// 카카오톡 공유에 성공했지만 아래 경고 메시지가 존재할 경우 일부 컨텐츠가 정상 동작하지 않을 수 있습니다.
+						Log.w(LOG_TAG, "Warning Msg:" + sharingResult.getWarningMsg());
+						Log.w(LOG_TAG, "Argument Msg:" + sharingResult.getArgumentMsg());
+					}
+
+					callbackContext.success("카카오톡 공유 성공");
+					return Unit.INSTANCE;
+				});
+			}
+			else {
+				// 카카오톡 미설치: 웹 공유 사용 권장
+				// 웹 공유 예시 코드
+				Uri sharerUrl = WebSharerClient.getInstance().makeDefaultUrl(feedTemplate);
+
+				// CustomTabs으로 웹 브라우저 열기
+
+				// 1. CustomTabsServiceConnection 지원 브라우저 열기
+				// ex) Chrome, 삼성 인터넷, FireFox, 웨일 등
+				try {
+					KakaoCustomTabsClient.INSTANCE.openWithDefault(context, sharerUrl);
+				} catch(UnsupportedOperationException e) {
+					// CustomTabsServiceConnection 지원 브라우저가 없을 때 예외처리
 				}
-				else if (linkResult != null) {
-					this.cordova.getActivity().startActivity(linkResult.getIntent());
+
+				// 2. CustomTabsServiceConnection 미지원 브라우저 열기
+				// ex) 다음, 네이버 등
+				try {
+					KakaoCustomTabsClient.INSTANCE.open(context, sharerUrl);
+				} catch (ActivityNotFoundException e) {
+					Log.w(LOG_TAG,e.getMessage());
+					// 디바이스에 설치된 인터넷 브라우저가 없을 때 예외처리
 				}
-				return null;
-			});
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -214,6 +266,27 @@ public class KakaoTalk extends CordovaPlugin {
 	}
 
 	/**
+	 * Log out
+	 *
+	 * @param callbackContext
+	 */
+	private void logout(final CallbackContext callbackContext) {
+		cordova.getThreadPool().execute(() -> UserApiClient.getInstance().logout(throwable -> {
+			if (throwable != null) {
+				Log.e(LOG_TAG, "로그아웃 실패. SDK에서 토큰 삭제됨", throwable);
+				callbackContext.error("로그아웃 실패. SDK에서 토큰 삭제됨");
+			}
+			else {
+				Log.i(LOG_TAG, "로그아웃 성공. SDK에서 토큰 삭제됨");
+				callbackContext.success("로그아웃 성공. SDK에서 토큰 삭제됨");
+			}
+
+			return null;
+		}));
+	}
+
+
+	/**
 	 *
 	 * @param callbackContext
 	 */
@@ -255,26 +328,6 @@ public class KakaoTalk extends CordovaPlugin {
 
 			return null;
 		});
-	}
-
-	/**
-	 * Log out
-	 *
-	 * @param callbackContext
-	 */
-	private void logout(final CallbackContext callbackContext) {
-		cordova.getThreadPool().execute(() -> UserApiClient.getInstance().logout(throwable -> {
-			if (throwable != null) {
-				Log.e(LOG_TAG, "로그아웃 실패. SDK에서 토큰 삭제됨", throwable);
-				callbackContext.error("로그아웃 실패. SDK에서 토큰 삭제됨");
-			}
-			else {
-				Log.i(LOG_TAG, "로그아웃 성공. SDK에서 토큰 삭제됨");
-				callbackContext.success("로그아웃 성공. SDK에서 토큰 삭제됨");
-			}
-
-			return null;
-		}));
 	}
 
 	/**
