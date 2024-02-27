@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, MyAuthType) {
 };
 - (void) login:(CDVInvokedUrlCommand*)command;
 - (void) logout:(CDVInvokedUrlCommand*)command;
+- (void) share:(CDVInvokedUrlCommand*)command;
 - (void) getAccessToken:(CDVInvokedUrlCommand*)command;
 - (void) requestMe:(CDVInvokedUrlCommand*)command;
 - (void) updateScopes:(CDVInvokedUrlCommand*)command;
